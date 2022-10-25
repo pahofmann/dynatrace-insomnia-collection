@@ -1,0 +1,5026 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-10-06T12:12:09.702Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9733fdfa812",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287983,
+            "created": 1665058287983,
+            "url": "{{ base_url }}/api/v1/rum/syncCS/{{ entity }}",
+            "name": "Downloads the synchronous code snippet",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287983,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288001,
+            "created": 1665058288001,
+            "name": "RUM - JavaScript tag management",
+            "description": "Download the RUM JavaScript tag",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288001,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "parentId": null,
+            "modified": 1665058296141,
+            "created": 1665058296141,
+            "name": "Dynatrace Environment API 1.0",
+            "description": "Documentation of the Dynatrace Environment API v1. To read about use cases and examples, see [Dynatrace Documentation](https://dt-url.net/xc03k3c).\n\nNotes about compatibility:\n* Operations marked as early adopter or preview may be changed in non-compatible ways, although we try to avoid this.\n* We may add new enum constants without incrementing the API version; thus, clients need to handle unknown enum constants gracefully.",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97330628492",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287984,
+            "created": 1665058287984,
+            "url": "{{ base_url }}/api/v1/rum/jsTag/{{ entity }}",
+            "name": "Downloads OneAgent JavaScript tag",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287984,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97344a5af75",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287984,
+            "created": 1665058287984,
+            "url": "{{ base_url }}/api/v1/rum/jsTagComplete/{{ entity }}",
+            "name": "Downloads JavaScript tag",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287984,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d0dd4937",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287984,
+            "created": 1665058287984,
+            "url": "{{ base_url }}/api/v1/rum/manualApps",
+            "name": "Lists all manually injected applications",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287984,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97327743f75",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287985,
+            "created": 1665058287985,
+            "url": "{{ base_url }}/api/v1/rum/jsLatestVersion",
+            "name": "Gets the latest version of OneAgent JavaScript library",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287985,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973cc710f53",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287985,
+            "created": 1665058287985,
+            "url": "{{ base_url }}/api/v1/rum/jsInlineScript/{{ entity }}",
+            "name": "Downloads inline code",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287985,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9735b984a63",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287986,
+            "created": 1665058287986,
+            "url": "{{ base_url }}/api/v1/rum/asyncCS/{{ entity }}",
+            "name": "Downloads the asynchronous code snippet",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287986,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a17b0389",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97350a59e37",
+            "modified": 1665058287986,
+            "created": 1665058287986,
+            "url": "{{ base_url }}/api/v1/rum/appRevision/{{ entity }}",
+            "name": "Gets the version of the RUM JavaScript code injected into specified application",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287986,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9735f7a5bbf",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287977,
+            "created": 1665058287977,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs",
+            "name": "Lists all the available logs on the specified custom device",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287977,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288001,
+            "created": 1665058288001,
+            "name": "Log monitoring - Custom devices",
+            "description": "Manage the analysis of custom device logs",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288001,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9739d4ace33",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287977,
+            "created": 1665058287977,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs/{{ logPath }}",
+            "name": "Starts the analysis job for the specified custom device log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "query",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287977,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973aa3b5535",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287978,
+            "created": 1665058287978,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs/jobs/{{ jobId }}/records",
+            "name": "Gets the filtered content of the analyzed log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "scrollToken",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287978,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973f0cdbfef",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287978,
+            "created": 1665058287978,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs/jobs/{{ jobId }}/records/top",
+            "name": "Gets the top values of fields present in the content of the analyzed log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287978,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973bba0698f",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287979,
+            "created": 1665058287979,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs/jobs/{{ jobId }}",
+            "name": "Deletes or cancels the specified log analysis job",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287979,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d5b4561d",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287979,
+            "created": 1665058287979,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs/jobs/{{ jobId }}/records",
+            "name": "Gets the content of the analyzed log",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "scrollToken",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287979,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97342d47326",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97367666edd",
+            "modified": 1665058287980,
+            "created": 1665058287980,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom-devices/{{ customDeviceId }}/logs/jobs/{{ jobId }}",
+            "name": "Gets status of the specified log analysis job",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287980,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973eb0095a4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973b5867d97",
+            "modified": 1665058287955,
+            "created": 1665058287955,
+            "url": "{{ base_url }}/api/v1/oneagents",
+            "name": "Gets the list of hosts with OneAgent deployment information for each host",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "includeDetails",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "managementZoneId",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "networkZoneId",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "hostGroupId",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "hostGroupName",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "osType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "cloudType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "autoInjection",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "availabilityState",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "detailedAvailabilityState",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "monitoringType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "agentVersionIs",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "agentVersionNumber",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "autoUpdateSetting",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "updateStatus",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "faultyVersion",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "activeGateId",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "technologyModuleType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "technologyModuleVersionIs",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "technologyModuleVersionNumber",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "technologyModuleFaultyVersion",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "pluginName",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pluginVersionIs",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pluginVersionNumber",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pluginState",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287955,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973b5867d97",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288002,
+            "created": 1665058288002,
+            "name": "OneAgent on a host",
+            "description": "View OneAgent deployment information per host",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288002,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973516463b9",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "modified": 1665058287942,
+            "created": 1665058287942,
+            "url": "{{ base_url }}/api/v1/tokens/lookup",
+            "name": "Lists token metadata by token itself",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287942,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288002,
+            "created": 1665058288002,
+            "name": "Tokens",
+            "description": "Deprecated. Use the new endpoint in [Environment API v2](index.jsp?urls.primaryName=Environment%20API%20v2#/Access%20Tokens%20-%20API%20tokens).",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288002,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9731323ed5c",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "modified": 1665058287943,
+            "created": 1665058287943,
+            "url": "{{ base_url }}/api/v1/tokens/{{ id }}",
+            "name": "Deletes the specified token",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287943,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9733bdbed97",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "modified": 1665058287943,
+            "created": 1665058287943,
+            "url": "{{ base_url }}/api/v1/tokens/{{ id }}",
+            "name": "Updates the specified token",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287943,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9738e4d6a40",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "modified": 1665058287944,
+            "created": 1665058287944,
+            "url": "{{ base_url }}/api/v1/tokens",
+            "name": "Creates a new token",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287944,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973ce4a7b09",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "modified": 1665058287944,
+            "created": 1665058287944,
+            "url": "{{ base_url }}/api/v1/tokens/{{ id }}",
+            "name": "Lists token metadata by token ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287944,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9734d697b86",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c38c6c1f",
+            "modified": 1665058287945,
+            "created": 1665058287945,
+            "url": "{{ base_url }}/api/v1/tokens",
+            "name": "Lists available tokens in your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "limit",
+                    "disabled": true,
+                    "value": "1000"
+                },
+                {
+                    "name": "user",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "permissions",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "from",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "to",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287945,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973917faacf",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287992,
+            "created": 1665058287992,
+            "url": "{{ base_url }}/api/v1/deployment/lambda/agent/latest",
+            "name": "Get the latest version names of the OneAgent for AWS Lambda",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287992,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288003,
+            "created": 1665058288003,
+            "name": "Deployment",
+            "description": "Download OneAgent and ActiveGate installers",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288003,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730427bc24",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287993,
+            "created": 1665058287993,
+            "url": "{{ base_url }}/api/v1/deployment/boshrelease/agent/{{ osType }}/version/{{ version }}/checksum",
+            "name": "Gets the checksum of the specified BOSH release tarball",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "skipMetadata",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287993,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9738084e990",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287993,
+            "created": 1665058287993,
+            "url": "{{ base_url }}/api/v1/deployment/boshrelease/versions/{{ osType }}",
+            "name": "Gets the list of available OneAgent versions for BOSH release tarballs",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287993,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973c79bffbd",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287993,
+            "created": 1665058287993,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/processmoduleconfig",
+            "name": "Gets the latest process module config | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "revision",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287993,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9732547f5e4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287994,
+            "created": 1665058287994,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/{{ osType }}/{{ installerType }}/latest/metainfo",
+            "name": "Gets the latest available version of a OneAgent installer",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "flavor",
+                    "disabled": true,
+                    "value": "default"
+                },
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "bitness",
+                    "disabled": true,
+                    "value": "all"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287994,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973f129a2c4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287994,
+            "created": 1665058287994,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/{{ osType }}/{{ installerType }}/version/{{ version }}/checksum",
+            "name": "Gets the checksum of the specified OneAgent installer",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "flavor",
+                    "disabled": true,
+                    "value": "default"
+                },
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "bitness",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "include",
+                    "disabled": true,
+                    "value": "All"
+                },
+                {
+                    "name": "skipMetadata",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287994,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973149259a0",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287995,
+            "created": 1665058287995,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/connectioninfo",
+            "name": "Gets the connectivity information for OneAgent",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "version",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287995,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97365ae30b8",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287995,
+            "created": 1665058287995,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/connectioninfo/endpoints",
+            "name": "Gets the list of the ActiveGate-Endpoints to be used for Agents ordered by networkzone-priorities.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287995,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973002de2a9",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287996,
+            "created": 1665058287996,
+            "url": "{{ base_url }}/api/v1/deployment/installer/gateway/connectioninfo",
+            "name": "Gets the connectivity information for Environment ActiveGate",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287996,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97335555b17",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287996,
+            "created": 1665058287996,
+            "url": "{{ base_url }}/api/v1/deployment/installer/gateway/versions/{{ osType }}",
+            "name": "Lists all available versions of ActiveGate installer",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287996,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973cfe6b633",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287996,
+            "created": 1665058287996,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/versions/{{ osType }}/{{ installerType }}",
+            "name": "Lists all available versions of OneAgent installer",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "flavor",
+                    "disabled": true,
+                    "value": "default"
+                },
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287996,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973645a89b4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287997,
+            "created": 1665058287997,
+            "url": "{{ base_url }}/api/v1/deployment/installer/gateway/{{ osType }}/latest",
+            "name": "Downloads the configured standard ActiveGate installer of the latest version for the specified OS",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287997,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973ac84eeb2",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287997,
+            "created": 1665058287997,
+            "url": "{{ base_url }}/api/v1/deployment/orchestration/agent/{{ orchestrationType }}/latest/signature",
+            "name": "Downloads the latest OneAgent deployment orchestration tarball's signature",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287997,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730b3d7ee9",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287998,
+            "created": 1665058287998,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/{{ osType }}/{{ installerType }}/latest",
+            "name": "Downloads the latest OneAgent installer",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "flavor",
+                    "disabled": true,
+                    "value": "default"
+                },
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "bitness",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "include",
+                    "disabled": true,
+                    "value": "All"
+                },
+                {
+                    "name": "skipMetadata",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287998,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973b31d030d",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287998,
+            "created": 1665058287998,
+            "url": "{{ base_url }}/api/v1/deployment/orchestration/agent/{{ orchestrationType }}/latest",
+            "name": "Downloads the latest OneAgent deployment orchestration tarball",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287998,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97386922235",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287999,
+            "created": 1665058287999,
+            "url": "{{ base_url }}/api/v1/deployment/boshrelease/agent/{{ osType }}/version/{{ version }}",
+            "name": "Downloads BOSH release tarballs of the specified version, OneAgent included",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "skipMetadata",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287999,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973b028e0a2",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287999,
+            "created": 1665058287999,
+            "url": "{{ base_url }}/api/v1/deployment/orchestration/agent/{{ orchestrationType }}/version/{{ version }}",
+            "name": "Downloads the requested version matching OneAgent deployment orchestration tarball",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287999,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d260c607",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058287999,
+            "created": 1665058287999,
+            "url": "{{ base_url }}/api/v1/deployment/installer/gateway/{{ osType }}/version/{{ version }}",
+            "name": "Downloads the ActiveGate installer of the specified version",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287999,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730871d433",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058288000,
+            "created": 1665058288000,
+            "url": "{{ base_url }}/api/v1/deployment/installer/agent/{{ osType }}/{{ installerType }}/version/{{ version }}",
+            "name": "Downloads OneAgent installer of the specified version",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "flavor",
+                    "disabled": true,
+                    "value": "default"
+                },
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "bitness",
+                    "disabled": true,
+                    "value": "all"
+                },
+                {
+                    "name": "include",
+                    "disabled": true,
+                    "value": "All"
+                },
+                {
+                    "name": "skipMetadata",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "If-None-Match",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058288000,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9733685f97e",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973327a55f8",
+            "modified": 1665058288000,
+            "created": 1665058288000,
+            "url": "{{ base_url }}/api/v1/deployment/orchestration/agent/{{ orchestrationType }}/version/{{ version }}/signature",
+            "name": "Downloads the requested version matching OneAgent deployment orchestration tarball's signature",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058288000,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9732bf8cb78",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287967,
+            "created": 1665058287967,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs",
+            "name": "Lists all the available logs of the specified process group",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287967,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288003,
+            "created": 1665058288003,
+            "name": "Log monitoring - Process groups",
+            "description": "Manage the analysis of process group logs",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288003,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9736fe5744d",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287968,
+            "created": 1665058287968,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs/{{ logPath }}",
+            "name": "Starts analysis job for the specified process group log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "hostFilter",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "query",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287968,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d40ac038",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287968,
+            "created": 1665058287968,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs/jobs/{{ jobId }}/records/top",
+            "name": "Gets the top values of fields present in the content of the analyzed log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287968,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973b158a90b",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287969,
+            "created": 1665058287969,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs/jobs/{{ jobId }}/records",
+            "name": "Gets the content of the analyzed log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "scrollToken",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d8f57992",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287969,
+            "created": 1665058287969,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs/jobs/{{ jobId }}/records",
+            "name": "Gets the content of the analyzed log",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "scrollToken",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97337b45e6f",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287970,
+            "created": 1665058287970,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs/jobs/{{ jobId }}",
+            "name": "Deletes or cancels the specified log analysis job",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287970,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973c55882c7",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97368d53275",
+            "modified": 1665058287970,
+            "created": 1665058287970,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ pgId }}/logs/jobs/{{ jobId }}",
+            "name": "Gets status of the specified log analysis job",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287970,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973c1191871",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c5497bca",
+            "modified": 1665058287988,
+            "created": 1665058287988,
+            "url": "{{ base_url }}/api/v1/events",
+            "name": "Pushes custom events to one or more monitored entities",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"eventType\": \"CUSTOM_ANNOTATION\",\n  \"start\": 1521042929000,\n  \"end\": 1521542929000,\n  \"attachRules\": {\n    \"entityIds\": [\n      \"CUSTOM_DEVICE-0000000000000007\"\n    ],\n    \"tagRule\": [\n      {\n        \"meTypes\": [\n          \"HOST\"\n        ],\n        \"tags\": [\n          {\n            \"context\": \"CONTEXTLESS\",\n            \"key\": \"customTag\"\n          }\n        ]\n      }\n    ]\n  },\n  \"source\": \"OpsControl\",\n  \"annotationType\": \"defect\",\n  \"annotationDescription\": \"The coffee machine is broken\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287988,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c5497bca",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288003,
+            "created": 1665058288003,
+            "name": "Events",
+            "description": "Deprecated. Use [Events API v2](index.jsp?urls.primaryName=Environment%20API%20v2#/Events) instead.",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288003,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97369cb36f6",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c5497bca",
+            "modified": 1665058287989,
+            "created": 1665058287989,
+            "url": "{{ base_url }}/api/v1/events",
+            "name": "Lists all the events of your environment, along with their parameters",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "from",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "to",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "eventType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entityId",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "cursor",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287989,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97300511064",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c5497bca",
+            "modified": 1665058287990,
+            "created": 1665058287990,
+            "url": "{{ base_url }}/api/v1/events/{{ eventId }}",
+            "name": "Gets the parameters of the specified event",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287990,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97377db2ac8",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973198abff5",
+            "modified": 1665058287945,
+            "created": 1665058287945,
+            "url": "{{ base_url }}/api/v1/time",
+            "name": "Gets the current time of the Dynatrace server in UTC milliseconds",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1665058287945,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973198abff5",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288004,
+            "created": 1665058288004,
+            "name": "Cluster time",
+            "description": "View the time of the Dynatrace server",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288004,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973236e88e7",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287973,
+            "created": 1665058287973,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs",
+            "name": "Lists all the available OS logs on the specified host",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287973,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288004,
+            "created": 1665058288004,
+            "name": "Log monitoring - Hosts",
+            "description": "Manage the analysis of operating system logs",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288004,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97340156d45",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287974,
+            "created": 1665058287974,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs/jobs/{{ jobId }}/records/top",
+            "name": "Gets the top values of fields present in the content of the analyzed log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287974,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973ef97b5a4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287974,
+            "created": 1665058287974,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs/{{ logPath }}",
+            "name": "Starts the analysis job for the specified OS log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "query",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287974,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9733e33801f",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287975,
+            "created": 1665058287975,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs/jobs/{{ jobId }}/records",
+            "name": "Gets the full content of the analyzed log",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "scrollToken",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287975,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d2bc15c8",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287975,
+            "created": 1665058287975,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs/jobs/{{ jobId }}/records",
+            "name": "Gets the filtered content of the analyzed log",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "scrollToken",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287975,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97356a7e479",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287976,
+            "created": 1665058287976,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs/jobs/{{ jobId }}",
+            "name": "Deletes or cancels the specified log analysis job",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287976,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9735c86849e",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9735a8b4d02",
+            "modified": 1665058287976,
+            "created": 1665058287976,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ hostId }}/logs/jobs/{{ jobId }}",
+            "name": "Gets status of the specified log analysis job",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287976,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97369cb3e1c",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360a32180",
+            "modified": 1665058287945,
+            "created": 1665058287945,
+            "url": "{{ base_url }}/api/v1/timeseries",
+            "name": "Lists all metric definitions, with the parameters of each metric",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "source",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "detailedSource",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287945,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360a32180",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288005,
+            "created": 1665058288005,
+            "name": "Timeseries",
+            "description": "Manage metrics",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288005,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97377212a57",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360a32180",
+            "modified": 1665058287946,
+            "created": 1665058287946,
+            "url": "{{ base_url }}/api/v1/timeseries/{{ timeseriesIdentifier }}",
+            "name": "Lists all available metric data points, matching the specified parameters",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287946,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97384b1a97c",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360a32180",
+            "modified": 1665058287946,
+            "created": 1665058287946,
+            "url": "{{ base_url }}/api/v1/timeseries/{{ timeseriesIdentifier }}",
+            "name": "Creates a new custom metric",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287946,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d93184f7",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360a32180",
+            "modified": 1665058287946,
+            "created": 1665058287946,
+            "url": "{{ base_url }}/api/v1/timeseries/{{ timeseriesIdentifier }}",
+            "name": "Deletes the specified custom metric",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287946,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9731cc593a5",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360a32180",
+            "modified": 1665058287947,
+            "created": 1665058287947,
+            "url": "{{ base_url }}/api/v1/timeseries/{{ timeseriesIdentifier }}",
+            "name": "Gets the parameters of the specified metric and, optionally, its data points",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "includeData",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "aggregationType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "predict",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "queryMode",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "percentile",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "includeParentIds",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "considerMaintenanceWindowsForAvailability",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287947,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97395435823",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287951,
+            "created": 1665058287951,
+            "url": "{{ base_url }}/api/v1/problem/status",
+            "name": "Lists the number of open problems, split by impact level",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287951,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288006,
+            "created": 1665058288006,
+            "name": "Problem",
+            "description": "Deprecated. Use [Problems API v2](index.jsp?urls.primaryName=Environment%20API%20v2#/Problems) instead.",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288006,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973af3819f9",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287951,
+            "created": 1665058287951,
+            "url": "{{ base_url }}/api/v1/problem/feed",
+            "name": "Gets the information about problems within the specified timeframe",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "status",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "impactLevel",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "severityLevel",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "expandDetails",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287951,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973085522fe",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287952,
+            "created": 1665058287952,
+            "url": "{{ base_url }}/api/v1/problem/details/{{ problemId }}",
+            "name": "Gets the properties of the specified problem",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287952,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973486ee455",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287952,
+            "created": 1665058287952,
+            "url": "{{ base_url }}/api/v1/problem/details/{{ problemId }}/comments",
+            "name": "Adds a new comment to the specified problem",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287952,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d0716551",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287952,
+            "created": 1665058287952,
+            "url": "{{ base_url }}/api/v1/problem/details/{{ problemId }}/comments",
+            "name": "Gets all the comments to the specified problem",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287952,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97340b7ee58",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287953,
+            "created": 1665058287953,
+            "url": "{{ base_url }}/api/v1/problem/details/{{ problemId }}/comments/{{ commentId }}",
+            "name": "Updates an existing comment to the specified problem",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287953,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973caa2784a",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287953,
+            "created": 1665058287953,
+            "url": "{{ base_url }}/api/v1/problem/details/{{ problemId }}/comments/{{ commentId }}",
+            "name": "Deletes an existing comment to the specified problem.",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287953,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9732d362361",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731baa06b4",
+            "modified": 1665058287954,
+            "created": 1665058287954,
+            "url": "{{ base_url }}/api/v1/problem/details/{{ problemId }}/close",
+            "name": "Closes the specified problem and adds a closing comment to it",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "content",
+                    "disabled": false,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287954,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973157ff6c9",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c51f7b72",
+            "modified": 1665058287947,
+            "created": 1665058287947,
+            "url": "{{ base_url }}/api/v1/thresholds",
+            "name": "Gets all configured thresholds for plugins and custom events in your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "filter",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287947,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c51f7b72",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288006,
+            "created": 1665058288006,
+            "name": "Threshold",
+            "description": "Deprecated. Use the new endpoint in [Configuration API](index.jsp?urls.primaryName=Configuration%20API#/Anomaly%20detection%20-%20Metric%20events).",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288006,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730ecd8234",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c51f7b72",
+            "modified": 1665058287948,
+            "created": 1665058287948,
+            "url": "{{ base_url }}/api/v1/thresholds/{{ thresholdId }}",
+            "name": "Deletes the specified threshold",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287948,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973f18798aa",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973c51f7b72",
+            "modified": 1665058287948,
+            "created": 1665058287948,
+            "url": "{{ base_url }}/api/v1/thresholds/{{ thresholdId }}",
+            "name": "Creates or updates an existing threshold for a plugin or a custom event",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287948,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97340e21774",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9730b33620c",
+            "modified": 1665058287963,
+            "created": 1665058287963,
+            "url": "{{ base_url }}/api/v1/entity/services/{{ meIdentifier }}",
+            "name": "Updates parameters of the specified service",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287963,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9730b33620c",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288007,
+            "created": 1665058288007,
+            "name": "Topology & Smartscape - Service",
+            "description": "Manage services",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288007,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a2bb1ba8",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9730b33620c",
+            "modified": 1665058287963,
+            "created": 1665058287963,
+            "url": "{{ base_url }}/api/v1/entity/services/{{ meIdentifier }}",
+            "name": "Gets parameters of the specified service",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287963,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730775364d",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9730b33620c",
+            "modified": 1665058287964,
+            "created": 1665058287964,
+            "url": "{{ base_url }}/api/v1/entity/services/{{ meIdentifier }}/baseline",
+            "name": "Gets baseline data for the specified service | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287964,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9732f9aaf8a",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9730b33620c",
+            "modified": 1665058287964,
+            "created": 1665058287964,
+            "url": "{{ base_url }}/api/v1/entity/services",
+            "name": "Lists all available services in your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "includeDetails",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287964,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730f3d8701",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731834fdc3",
+            "modified": 1665058287965,
+            "created": 1665058287965,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/processes",
+            "name": "Lists all monitored processes along with their parameters",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "hostTag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "host",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "actualMonitoringState",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "expectedMonitoringState",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "includeDetails",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287965,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731834fdc3",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288007,
+            "created": 1665058288007,
+            "name": "Topology & Smartscape - Process",
+            "description": "Manage processes",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288007,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a7bc4c79",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731834fdc3",
+            "modified": 1665058287965,
+            "created": 1665058287965,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/processes/{{ meIdentifier }}",
+            "name": "List properties of the specified process",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287965,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9736fd849c9",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9736fb51b61",
+            "modified": 1665058287966,
+            "created": 1665058287966,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ meIdentifier }}",
+            "name": "List properties of the specified process group",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287966,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9736fb51b61",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288007,
+            "created": 1665058288007,
+            "name": "Topology & Smartscape - Process group",
+            "description": "Manage process groups",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288007,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9737ab48de5",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9736fb51b61",
+            "modified": 1665058287966,
+            "created": 1665058287966,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups/{{ meIdentifier }}",
+            "name": "Updates properties of the specified process group",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287966,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a066ad05",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9736fb51b61",
+            "modified": 1665058287967,
+            "created": 1665058287967,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/process-groups",
+            "name": "Lists all process groups of your environment, along with their parameters",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "host",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "includeDetails",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287967,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973b72dadda",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9733cfcf9bb",
+            "modified": 1665058287977,
+            "created": 1665058287977,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/custom/{{ customDeviceId }}",
+            "name": "Creates or updates a custom device, or reports metric data points to the custom device.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287977,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9733cfcf9bb",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288008,
+            "created": 1665058288008,
+            "name": "Topology & Smartscape - Custom device",
+            "description": "Create a custom device and push data to it",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288008,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973e476bc26",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97383008066",
+            "modified": 1665058287971,
+            "created": 1665058287971,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ meIdentifier }}/tags/{{ tag }}",
+            "name": "Remove tag of the specified host",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287971,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97383008066",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288008,
+            "created": 1665058288008,
+            "name": "Topology & Smartscape - Host",
+            "description": "Manage hosts",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288008,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9733f09f89c",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97383008066",
+            "modified": 1665058287972,
+            "created": 1665058287972,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ meIdentifier }}",
+            "name": "Updates properties of the specified host",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287972,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973ab716b13",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97383008066",
+            "modified": 1665058287972,
+            "created": 1665058287972,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts/{{ meIdentifier }}",
+            "name": "Gets parameters of the specified host",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287972,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97332eda133",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97383008066",
+            "modified": 1665058287973,
+            "created": 1665058287973,
+            "url": "{{ base_url }}/api/v1/entity/infrastructure/hosts",
+            "name": "Lists all available hosts in your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "showMonitoringCandidates",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "hostGroupId",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "hostGroupName",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "includeDetails",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287973,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a009710f",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97325db0079",
+            "modified": 1665058287980,
+            "created": 1665058287980,
+            "url": "{{ base_url }}/api/v1/entity/applications/{{ meIdentifier }}",
+            "name": "Updates parameters of the specified application",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287980,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97325db0079",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288009,
+            "created": 1665058288009,
+            "name": "Topology & Smartscape - Application",
+            "description": "Manage applications",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288009,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973fb09303f",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97325db0079",
+            "modified": 1665058287980,
+            "created": 1665058287980,
+            "url": "{{ base_url }}/api/v1/entity/applications/{{ meIdentifier }}",
+            "name": "Gets parameters of the specified application",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287980,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97300c72f2c",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97325db0079",
+            "modified": 1665058287981,
+            "created": 1665058287981,
+            "url": "{{ base_url }}/api/v1/entity/applications/{{ meIdentifier }}/baseline",
+            "name": "Gets baseline data for the specified application | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287981,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973252b2337",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97325db0079",
+            "modified": 1665058287981,
+            "created": 1665058287981,
+            "url": "{{ base_url }}/api/v1/entity/applications",
+            "name": "Gets the list of all applications in your environment along with their parameters",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "relativeTime",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "includeDetails",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287981,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97328f98d2a",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973af54ec89",
+            "modified": 1665058287987,
+            "created": 1665058287987,
+            "url": "{{ base_url }}/api/v1/synthetic/ext/events",
+            "name": "Pushes third-party synthetic events to Dynatrace",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287987,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973af54ec89",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288009,
+            "created": 1665058288009,
+            "name": "Synthetic - Third party",
+            "description": "Push third-party synthetic data to Dynatrace",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288009,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97339985e6f",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973af54ec89",
+            "modified": 1665058287987,
+            "created": 1665058287987,
+            "url": "{{ base_url }}/api/v1/synthetic/ext/stateModifications",
+            "name": "Modifies the operation state of all third-party monitors",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287987,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973f51dd4cf",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973af54ec89",
+            "modified": 1665058287987,
+            "created": 1665058287987,
+            "url": "{{ base_url }}/api/v1/synthetic/ext/tests",
+            "name": "Pushes third-party synthetic monitors, locations, and results to Dynatrace",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287987,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9731a9aa834",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973afdc8ce9",
+            "modified": 1665058287982,
+            "created": 1665058287982,
+            "url": "{{ base_url }}/api/v1/maintenance/{{ uid }}",
+            "name": "Lists all parameters of the specified maintenance window.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287982,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973afdc8ce9",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288009,
+            "created": 1665058288009,
+            "name": "Maintenance window",
+            "description": "Deprecated. Use the [Settings endpoint](index.jsp?urls.primaryName=Environment%20API%20v2#/Settings%20-%20Objects) with schemaId `builtin:alerting.maintenance-window`.",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288009,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973596884f0",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973afdc8ce9",
+            "modified": 1665058287982,
+            "created": 1665058287982,
+            "url": "{{ base_url }}/api/v1/maintenance",
+            "name": "Creates a new or updates an existing maintenance window",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"id\": \"string\",\n  \"type\": \"string\",\n  \"description\": \"string\",\n  \"suppressAlerts\": true,\n  \"suppressProblems\": true,\n  \"scope\": {\n    \"entities\": [\n      \"string\"\n    ],\n    \"matches\": [\n      {\n        \"type\": \"string\",\n        \"tags\": [\n          {\n            \"tagKey\": {\n              \"context\": \"string\",\n              \"key\": \"string\"\n            },\n            \"value\": \"string\",\n            \"key\": \"string\",\n            \"context\": \"string\"\n          }\n        ]\n      }\n    ]\n  },\n  \"schedule\": {\n    \"type\": \"string\",\n    \"timezoneId\": \"string\",\n    \"maintenanceStart\": \"string\",\n    \"maintenanceEnd\": \"string\",\n    \"recurrence\": {\n      \"day\": \"string\",\n      \"dayOfMonth\": 0,\n      \"start\": \"string\",\n      \"duration\": 0\n    }\n  }\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287982,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9738ed517f4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973afdc8ce9",
+            "modified": 1665058287982,
+            "created": 1665058287982,
+            "url": "{{ base_url }}/api/v1/maintenance/{{ uid }}",
+            "name": "Deletes the specified maintenance window",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287982,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a6192004",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973afdc8ce9",
+            "modified": 1665058287983,
+            "created": 1665058287983,
+            "url": "{{ base_url }}/api/v1/maintenance",
+            "name": "Lists all parameters of all maintenance windows available in your Dynatrace environment.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "from",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "to",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "type",
+                    "disabled": true,
+                    "value": "Unknown"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287983,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97372d29a31",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360f42050",
+            "modified": 1665058287990,
+            "created": 1665058287990,
+            "url": "{{ base_url }}/api/v1/userSessionQueryLanguage/tree",
+            "name": "Returns the result of the query as a tree structure",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "query",
+                    "disabled": false,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "offsetUTC",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "addDeepLinkFields",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "explain",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287990,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360f42050",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288010,
+            "created": 1665058288010,
+            "name": "RUM - User sessions",
+            "description": "Obtain user sessions data",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288010,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973d1520db3",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97360f42050",
+            "modified": 1665058287991,
+            "created": 1665058287991,
+            "url": "{{ base_url }}/api/v1/userSessionQueryLanguage/table",
+            "name": "Returns the result of the query as a table structure",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "query",
+                    "disabled": false,
+                    "value": "string"
+                },
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "offsetUTC",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "pageOffset",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "addDeepLinkFields",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "explain",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287991,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973a032db3c",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fc305d52",
+            "modified": 1665058287949,
+            "created": 1665058287949,
+            "url": "{{ base_url }}/api/v1/synthetic/monitors/{{ monitorId }}",
+            "name": "Deletes the specified synthetic monitor",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287949,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fc305d52",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288010,
+            "created": 1665058288010,
+            "name": "Synthetic - Monitors",
+            "description": "Manage synthetic monitors",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288010,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973c2e7d0ba",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fc305d52",
+            "modified": 1665058287949,
+            "created": 1665058287949,
+            "url": "{{ base_url }}/api/v1/synthetic/monitors/{{ monitorId }}",
+            "name": "Updates parameters of the specified synthetic monitor",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287949,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9734fef77a8",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fc305d52",
+            "modified": 1665058287950,
+            "created": 1665058287950,
+            "url": "{{ base_url }}/api/v1/synthetic/monitors",
+            "name": "Lists all synthetic monitors in your Dynatrace environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "managementZone",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "tag",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "location",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "assignedApps",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "type",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "enabled",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "credentialId",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "credentialOwner",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287950,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9736ece07ca",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fc305d52",
+            "modified": 1665058287950,
+            "created": 1665058287950,
+            "url": "{{ base_url }}/api/v1/synthetic/monitors",
+            "name": "Creates a new synthetic monitor",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287950,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973e8253659",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fc305d52",
+            "modified": 1665058287950,
+            "created": 1665058287950,
+            "url": "{{ base_url }}/api/v1/synthetic/monitors/{{ monitorId }}",
+            "name": "Gets parameters of the specified synthetic monitor",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287950,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9736c6a06c2",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287938,
+            "created": 1665058287938,
+            "url": "{{ base_url }}/api/v1/synthetic/nodes",
+            "name": "Lists all synthetic nodes available in your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287938,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288010,
+            "created": 1665058288010,
+            "name": "Synthetic - Locations, nodes, and configuration",
+            "description": "Manage synthetic locations and nodes",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288010,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973e7908772",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287939,
+            "created": 1665058287939,
+            "url": "{{ base_url }}/api/v1/synthetic/nodes/{{ nodeId }}",
+            "name": "Lists properties of the specified synthetic node",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287939,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973eac1a371",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287939,
+            "created": 1665058287939,
+            "url": "{{ base_url }}/api/v1/synthetic/locations/status",
+            "name": "Enable/disable public synthetic locations | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287939,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730eca758d",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287940,
+            "created": 1665058287940,
+            "url": "{{ base_url }}/api/v1/synthetic/locations/{{ locationId }}",
+            "name": "Deletes the specified private synthetic location",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287940,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9738322b546",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287940,
+            "created": 1665058287940,
+            "url": "{{ base_url }}/api/v1/synthetic/locations/{{ locationId }}",
+            "name": "Updates the specified synthetic location",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287940,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973bee77bf5",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287940,
+            "created": 1665058287940,
+            "url": "{{ base_url }}/api/v1/synthetic/locations/status",
+            "name": "Returns whether public locations are enabled or not | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287940,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973180ea958",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287941,
+            "created": 1665058287941,
+            "url": "{{ base_url }}/api/v1/synthetic/locations",
+            "name": "Creates a new private synthetic location",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287941,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97399c1500d",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287941,
+            "created": 1665058287941,
+            "url": "{{ base_url }}/api/v1/synthetic/locations/{{ locationId }}",
+            "name": "Gets properties of the specified location",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287941,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a97357a25c32",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a973fd39f907",
+            "modified": 1665058287942,
+            "created": 1665058287942,
+            "url": "{{ base_url }}/api/v1/synthetic/locations",
+            "name": "Lists all synthetic locations (both public and private) available for your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "cloudPlatform",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "type",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287942,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a9730c1fd808",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731a9bb53a",
+            "modified": 1665058288001,
+            "created": 1665058288001,
+            "url": "{{ base_url }}/api/v1/config/clusterversion",
+            "name": "Gets the current version of the Dynatrace server",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058288001,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a9731a9bb53a",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288011,
+            "created": 1665058288011,
+            "name": "Cluster version",
+            "description": "View the version of the Dynatrace server",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288011,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973cb49f8b4",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97331e8edba",
+            "modified": 1665058287991,
+            "created": 1665058287991,
+            "url": "{{ base_url }}/api/v1/anonymize/anonymizationJobs/{{ requestId }}",
+            "name": "Shows the progress of the specified anonymization job",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287991,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97331e8edba",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288011,
+            "created": 1665058288011,
+            "name": "Anonymization",
+            "description": "Remove sensitive user data from your sessions",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1665058288011,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_e1141dce261f4a4a8e4b1efebef6a973ebc418d0",
+            "parentId": "fld_wrk_e1141dce261f4a4a8e4b1efebef6a97331e8edba",
+            "modified": 1665058287992,
+            "created": 1665058287992,
+            "url": "{{ base_url }}/api/v1/anonymize/anonymizationJobs",
+            "name": "Creates user session anonymization job",
+            "description": "",
+            "method": "PUT",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTimestamp",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "userIds",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "ips",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "additionalField",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1665058287992,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_88a7e706b3da4fae7f0a13bd139d7028bd1d0fa4",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058288012,
+            "created": 1665058288012,
+            "name": "Base environment",
+            "data": {
+                "base_url": "{{ scheme }}://{{ host }}"
+            },
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1665058288012,
+            "_type": "environment"
+        },
+        {
+            "_id": "spc_5232c5ef99c841f7ba9ce52ea71d3e7d",
+            "parentId": "wrk_e1141dce261f4a4a8e4b1efebef6a973",
+            "modified": 1665058296154,
+            "created": 1665058296142,
+            "fileName": "Dynatrace Environment API 1.0",
+            "contents": "{\n  \"openapi\" : \"3.0.1\",\n  \"info\" : {\n    \"title\" : \"Dynatrace Environment API\",\n    \"description\" : \"Documentation of the Dynatrace Environment API v1. To read about use cases and examples, see [Dynatrace Documentation](https://dt-url.net/xc03k3c).\\n\\nNotes about compatibility:\\n* Operations marked as early adopter or preview may be changed in non-compatible ways, although we try to avoid this.\\n* We may add new enum constants without incrementing the API version; thus, clients need to handle unknown enum constants gracefully.\",\n    \"version\" : \"1.0\"\n  },\n  \"servers\" : [ {\n    \"url\" : \"\"\n      }\n    }\n  }\n}",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_env_88a7e706b3da4fae7f0a13bd139d7028bd1d0fa4_sub",
+            "parentId": "env_88a7e706b3da4fae7f0a13bd139d7028bd1d0fa4",
+            "modified": 1665058288012,
+            "created": 1665058288012,
+            "name": "Dynatrace Example Env",
+            "data": {
+                "scheme": "https",
+                "base_path": "",
+                "host": "*.live.dynatrace.com OR your-dtmanaged.com/e/ENVID",
+                "authorization": "Api-Token REPLACE_ME_WITH_TOKEN"
+            },
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1665058288012,
+            "_type": "environment"
+        }
+    ]
+}

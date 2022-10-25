@@ -1,0 +1,3479 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-10-25T12:57:25.064Z",
+    "__export_source": "insomnia.desktop.app:v2022.6.0",
+    "resources": [
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753868c83152a",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "modified": 1666702550993,
+            "created": 1666702550993,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/environments",
+            "name": "Creates a new environment.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "createToken",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550993,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702551001,
+            "created": 1666702551001,
+            "name": "Environments",
+            "description": "Manage environments",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702551001,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "parentId": null,
+            "modified": 1666702552779,
+            "created": 1666702552779,
+            "name": "Dynatrace Cluster API 2.0",
+            "description": "Dynatrace Managed exposes cluster-wide functionality via REST endpoints. This interactive documentation also acts as a REST client you can use to interact with Dynatrace Managed clusters. \n\nTo authorize, use the API Token generated in [Settings - API Tokens page](/cmc#cm/apiToken). The HTTP status code of the response shows the result of your request. The expected response code for a successful request is documented individually per REST endpoint. Additionally the following error response codes can occur in our REST interface:\n\n* 400 - Bad Request: Some request parameters are not correct. See response body for details.\n* 401 - Unauthorized: A valid authorization header is required but is missing.\n* 403 - Forbidden: Execution of request is not allowed, e.g. api-token is invalid.\n* 404 - Not Found: Endpoint does not exist or some entities could not be found.\n* 500 - Internal Server Error: See response body for details.\n* 556 - Upgrade in progress: Operation couldn't be performed during the upgrade.\n\nNotes about compatibility:\n* Operations marked as early adopter or preview may be changed in non-compatible ways, although we try to avoid this.\n* We may add new enum constants without incrementing the API version; thus, clients need to handle unknown enum constants gracefully.",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753868c7ec810",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "modified": 1666702550993,
+            "created": 1666702550993,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/environments",
+            "name": "Lists all existing environments.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "sort",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "filter",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "includeConsumptionInfo",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "includeStorageInfo",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "includeUncachedConsumptionInfo",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550993,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386cced40dc",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "modified": 1666702550992,
+            "created": 1666702550992,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/environments/{{ id }}",
+            "name": "Updates an existing environment or creates a new one.",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "createToken",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550992,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386972cc5f1",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "modified": 1666702550992,
+            "created": 1666702550992,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/environments/{{ id }}",
+            "name": "Gets the properties of the specified environment.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "includeConsumptionInfo",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "includeStorageInfo",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "includeUncachedConsumptionInfo",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550992,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753867e8200b1",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "modified": 1666702550992,
+            "created": 1666702550992,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/environments/{{ id }}",
+            "name": "Deletes the specified environment. An environment must be disabled before it can be deleted.",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550992,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386cbd9908e",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386017b53c4",
+            "modified": 1666702550991,
+            "created": 1666702550991,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/environments/{{ id }}/tokenManagementToken",
+            "name": "Creates a new tenant management token for an environment.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550991,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538628c1731d",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386d78a6045",
+            "modified": 1666702550989,
+            "created": 1666702550989,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/remoteaccess/requests/{{ requestId }}/state",
+            "name": "Change state of access request",
+            "description": "",
+            "method": "PUT",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550989,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386d78a6045",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702551000,
+            "created": 1666702551000,
+            "name": "Remote access",
+            "description": "Manage remote access requests",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702551000,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386289bebb3",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386d78a6045",
+            "modified": 1666702550989,
+            "created": 1666702550989,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/remoteaccess/requests",
+            "name": "Get all access requests",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550989,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386687fc8dd",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386d78a6045",
+            "modified": 1666702550988,
+            "created": 1666702550988,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/remoteaccess/requests/{{ requestId }}",
+            "name": "Get access request",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550988,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386060c81f2",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386d78a6045",
+            "modified": 1666702550988,
+            "created": 1666702550988,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/remoteaccess/requests",
+            "name": "Grant remote access permission",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550988,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538690e915f7",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753863229609e",
+            "modified": 1666702550994,
+            "created": 1666702550994,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/license/consumption",
+            "name": "Export license consumption data",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTs",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "endTs",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550994,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da29753863229609e",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702551000,
+            "created": 1666702551000,
+            "name": "License",
+            "description": "View license information",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702551000,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538625c40885",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753863229609e",
+            "modified": 1666702550993,
+            "created": 1666702550993,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/license/consumption/hour",
+            "name": "Retrieve license consumption",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "startTs",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550993,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538655635177",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753862647db0d",
+            "modified": 1666702550987,
+            "created": 1666702550987,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/clusterConfig/userSessions",
+            "name": "Get user sessions configuration",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550987,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da29753862647db0d",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702551000,
+            "created": 1666702551000,
+            "name": "User management",
+            "description": "Manage user sessions",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702551000,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386083123b2",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753862647db0d",
+            "modified": 1666702550987,
+            "created": 1666702550987,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/clusterConfig/userSessions",
+            "name": "Update user sessions configuration",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"concurrentSessionPolicyDto\": {\n    \"userLimit\": 0,\n    \"adminLimit\": 0\n  },\n  \"automaticLogoutDto\": {\n    \"logoutInactiveUsersEnabled\": true,\n    \"userInactivityTimeout\": 900\n  }\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550987,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386813cfb88",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753862647db0d",
+            "modified": 1666702550986,
+            "created": 1666702550986,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/userSessions",
+            "name": "Remove user sessions for a given user",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "userId",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550986,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538678adbb3b",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753862647db0d",
+            "modified": 1666702550986,
+            "created": 1666702550986,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/userSessions",
+            "name": "Get user sessions",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "userId",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550986,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386d56d9853",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386ec3e1b6d",
+            "modified": 1666702550991,
+            "created": 1666702550991,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/logMonitoring/{{ environmentId }}/status",
+            "name": "Gets the current status of Log Monitoring v2",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550991,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386ec3e1b6d",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550999,
+            "created": 1666702550999,
+            "name": "Log Monitoring v2",
+            "description": "Manage Log Monitoring 2.0 settings",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550999,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753869905c339",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386ec3e1b6d",
+            "modified": 1666702550990,
+            "created": 1666702550990,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/logMonitoring/{{ environmentId }}/enable",
+            "name": "Enables Log Monitoring v2",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550990,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538657036321",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386ec3e1b6d",
+            "modified": 1666702550990,
+            "created": 1666702550990,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/logMonitoring/refreshLogEventsLimit",
+            "name": "Updates the total log events per cluster limit based on the cluster resources size",
+            "description": "",
+            "method": "POST",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550990,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753868e4d6a40",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "modified": 1666702550975,
+            "created": 1666702550975,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/tokens",
+            "name": "Creates a new token",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550975,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550999,
+            "created": 1666702550999,
+            "name": "Tokens",
+            "description": "Manage Dynatrace API authentication tokens",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550999,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753864d697b86",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "modified": 1666702550975,
+            "created": 1666702550975,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/tokens",
+            "name": "Lists available tokens in your environment",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "limit",
+                    "disabled": true,
+                    "value": "1000"
+                },
+                {
+                    "name": "user",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "permissions",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "from",
+                    "disabled": true,
+                    "value": "0"
+                },
+                {
+                    "name": "to",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550975,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386ce4a7b09",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "modified": 1666702550974,
+            "created": 1666702550974,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/tokens/{{ id }}",
+            "name": "Lists token metadata by token ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550974,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753863bdbed97",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "modified": 1666702550973,
+            "created": 1666702550973,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/tokens/{{ id }}",
+            "name": "Updates the specified token",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550973,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753861323ed5c",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "modified": 1666702550973,
+            "created": 1666702550973,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/tokens/{{ id }}",
+            "name": "Deletes the specified token",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550973,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386516463b9",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386c38c6c1f",
+            "modified": 1666702550972,
+            "created": 1666702550972,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/tokens/lookup",
+            "name": "Lists token metadata by token itself",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550972,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753869d0e8c70",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386bdae2aa9",
+            "modified": 1666702550977,
+            "created": 1666702550977,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/networkZones/{{ id }}",
+            "name": "Updates an existing network zone or creates a new one",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550977,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386bdae2aa9",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550998,
+            "created": 1666702550998,
+            "name": "Network zones",
+            "description": "Manage network zones",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550998,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538665aed9c1",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386bdae2aa9",
+            "modified": 1666702550977,
+            "created": 1666702550977,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/networkZones/{{ id }}",
+            "name": "Gets parameters of the specified network zone",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550977,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386dd0da851",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386bdae2aa9",
+            "modified": 1666702550976,
+            "created": 1666702550976,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/networkZones",
+            "name": "Lists all existing network zones",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550976,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538656ea97f0",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386bdae2aa9",
+            "modified": 1666702550976,
+            "created": 1666702550976,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/networkZones/{{ id }}",
+            "name": "Deletes the specified network zone",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550976,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386aca0fd99",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538669d49686",
+            "modified": 1666702550962,
+            "created": 1666702550962,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGateTokens",
+            "name": "Creates a new ActiveGate token | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550962,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da297538669d49686",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550998,
+            "created": 1666702550998,
+            "name": "Access Tokens - ActiveGate tokens",
+            "description": "Manage Dynatrace Access Tokens",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550998,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753865fa9385e",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538669d49686",
+            "modified": 1666702550962,
+            "created": 1666702550962,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGateTokens/{{ activeGateTokenIdentifier }}",
+            "name": "Gets metadata of an ActiveGate token | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550962,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538654bfe5c0",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538669d49686",
+            "modified": 1666702550962,
+            "created": 1666702550962,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGateTokens",
+            "name": "Lists all available ActiveGate tokens | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550962,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753869d8c775d",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538669d49686",
+            "modified": 1666702550961,
+            "created": 1666702550961,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGateTokens/{{ activeGateTokenIdentifier }}",
+            "name": "Deletes an ActiveGate token | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550961,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753861e765f9e",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538669b60924",
+            "modified": 1666702550979,
+            "created": 1666702550979,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates",
+            "name": "Lists all available ActiveGates",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "hostname",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "osType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "networkAddress",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "loadBalancerAddress",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "type",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "networkZone",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "updateStatus",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "versionCompareType",
+                    "disabled": true,
+                    "value": "EQUAL"
+                },
+                {
+                    "name": "version",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "autoUpdate",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "group",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "online",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "enabledModule",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "disabledModule",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "containerized",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "tokenState",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "tokenExpirationSet",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550979,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da297538669b60924",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550998,
+            "created": 1666702550998,
+            "name": "ActiveGates",
+            "description": "View information about your ActiveGates",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550998,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753860c003dc2",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538669b60924",
+            "modified": 1666702550978,
+            "created": 1666702550978,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}",
+            "name": "Gets the details of the specified ActiveGate",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550978,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753868539589d",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550986,
+            "created": 1666702550986,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/autoUpdate",
+            "name": "Gets the configuration of auto-update for the specified ActiveGate",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550986,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550998,
+            "created": 1666702550998,
+            "name": "ActiveGates - Auto-update configuration",
+            "description": "Manage ActiveGate auto-update settings.",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550998,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386cf02bfe1",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550985,
+            "created": 1666702550985,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/autoUpdate/validator",
+            "name": "Validates the payload for the `POST /activeGates/{agId}/autoUpdate` request.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550985,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386631c3e89",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550985,
+            "created": 1666702550985,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/autoUpdate",
+            "name": "Updates the configuration of auto-update for the specified ActiveGate",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550985,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386ef9b164e",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550984,
+            "created": 1666702550984,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/autoUpdate",
+            "name": "Puts the global auto-update configuration of cluster ActiveGates.",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550984,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753862a71bcf7",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550984,
+            "created": 1666702550984,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/autoUpdate",
+            "name": "Gets the global auto-update configuration of cluster ActiveGates.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550984,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386df24b3b7",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550983,
+            "created": 1666702550983,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/autoUpdate/validator",
+            "name": "Validates the payload for the `POST /activeGates/autoUpdate` request.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550983,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386588d4f21",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550983,
+            "created": 1666702550983,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/autoUpdate/{{ envId }}",
+            "name": "Gets the global auto-update configuration of environment ActiveGates.",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550983,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538609e38524",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550983,
+            "created": 1666702550983,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/autoUpdate/{{ envId }}",
+            "name": "Puts the global auto-update configuration of environment ActiveGates.",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550983,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386db422901",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386520bf4e8",
+            "modified": 1666702550982,
+            "created": 1666702550982,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/autoUpdate/{{ envId }}/validator",
+            "name": "Validates the payload for the `POST /activeGates/autoUpdate/{envId}` request.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550982,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386f581d60b",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "modified": 1666702550981,
+            "created": 1666702550981,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/updateJobs",
+            "name": "Lists update jobs for the specified ActiveGate",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "from",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "to",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startVersionCompareType",
+                    "disabled": true,
+                    "value": "EQUAL"
+                },
+                {
+                    "name": "startVersion",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "updateType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "targetVersionCompareType",
+                    "disabled": true,
+                    "value": "EQUAL"
+                },
+                {
+                    "name": "targetVersion",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "lastUpdates",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550981,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550997,
+            "created": 1666702550997,
+            "name": "ActiveGates - Auto-update jobs",
+            "description": "Manage ActiveGate auto-update jobs.",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550997,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386d1b81efa",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "modified": 1666702550981,
+            "created": 1666702550981,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/updateJobs",
+            "name": "List ActiveGates with update jobs",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "from",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "to",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "startVersionCompareType",
+                    "disabled": true,
+                    "value": "EQUAL"
+                },
+                {
+                    "name": "startVersion",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "updateType",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "targetVersionCompareType",
+                    "disabled": true,
+                    "value": "EQUAL"
+                },
+                {
+                    "name": "targetVersion",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "lastUpdates",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550981,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386fbb492c5",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "modified": 1666702550980,
+            "created": 1666702550980,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/updateJobs/{{ jobId }}",
+            "name": "Deletes the specified update job",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550980,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386c0823f0c",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "modified": 1666702550980,
+            "created": 1666702550980,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/updateJobs/{{ jobId }}",
+            "name": "Gets the parameters of the specified update job",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550980,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386903a1155",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "modified": 1666702550980,
+            "created": 1666702550980,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/updateJobs",
+            "name": "Creates a new update job for the specified ActiveGate",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550980,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386117cd1d6",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538646d7a8c2",
+            "modified": 1666702550979,
+            "created": 1666702550979,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/{{ agId }}/updateJobs/validator",
+            "name": "Validates the payload for the `POST /activeGates/{agId}/updateJobs` request.",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550979,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386aeb815f1",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753864207a888",
+            "modified": 1666702550978,
+            "created": 1666702550978,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/activeGates/tokenEnforcement",
+            "name": "Gets the status of ActiveGate tokens enforcement | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550978,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da29753864207a888",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550997,
+            "created": 1666702550997,
+            "name": "ActiveGates - ActiveGate tokens enforcement",
+            "description": "Gets the status of ActiveGate tokens enforcement",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550997,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538635555b17",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386327a55f8",
+            "modified": 1666702550977,
+            "created": 1666702550977,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/deployment/installer/gateway/versions/{{ osType }}",
+            "name": "Lists all available versions of ActiveGate installer",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "arch",
+                    "disabled": true,
+                    "value": "all"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550977,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386327a55f8",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550997,
+            "created": 1666702550997,
+            "name": "Deployment",
+            "description": "View available ActiveGate versions",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550997,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753860cb17527",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550967,
+            "created": 1666702550967,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies",
+            "name": "Get all policies for a level",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "name",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550967,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550996,
+            "created": 1666702550996,
+            "name": "IAM - policies management",
+            "description": "Create, update, delete and read IAM policies",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550996,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753869b7c68a9",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550966,
+            "created": 1666702550966,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies",
+            "name": "Create a policy within a level",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"tags\": [\n    \"string\"\n  ],\n  \"statementQuery\": \"string\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550966,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386169f62a5",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550966,
+            "created": 1666702550966,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies/{{ uuid }}",
+            "name": "Get a policy within a level",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550966,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538669636933",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550965,
+            "created": 1666702550965,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies/{{ uuid }}",
+            "name": "Delete a policy from a level",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "force",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550965,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386132aeadf",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550965,
+            "created": 1666702550965,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies/{{ uuid }}",
+            "name": "Update or create a new policy within a level",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"tags\": [\n    \"string\"\n  ],\n  \"statementQuery\": \"string\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550965,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386e204d28a",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550964,
+            "created": 1666702550964,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies/validation",
+            "name": "Validates policy before creation or update",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"tags\": [\n    \"string\"\n  ],\n  \"statementQuery\": \"string\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550964,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386afea1cc2",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550964,
+            "created": 1666702550964,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies/validation/{{ policy-uuid }}",
+            "name": "Validates policy before creation or update",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"tags\": [\n    \"string\"\n  ],\n  \"statementQuery\": \"string\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550964,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386adbb817c",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386f872bab9",
+            "modified": 1666702550964,
+            "created": 1666702550964,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/policies/aggregate",
+            "name": "Get overview of all policies for a given level, descendant and ancestor levels",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550964,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386db43bff3",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550971,
+            "created": 1666702550971,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/{{ policy-uuid }}",
+            "name": "Append policy bindings within a level",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"groups\": [\n    \"string\"\n  ],\n  \"parameters\": {},\n  \"metadata\": {}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550971,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550996,
+            "created": 1666702550996,
+            "name": "IAM - policies bindings",
+            "description": "Bind policies in the context of organizational structure",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550996,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386783923e5",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550971,
+            "created": 1666702550971,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/{{ policy-uuid }}",
+            "name": "Get policy bindings within a level",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "query-params",
+                    "disabled": true,
+                    "value": "[object Object]"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550971,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386ff743d19",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550970,
+            "created": 1666702550970,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/{{ policy-uuid }}",
+            "name": "Delete all policy bindings within a level",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "query-params",
+                    "disabled": true,
+                    "value": "[object Object]"
+                },
+                {
+                    "name": "forceMultiple",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550970,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753862281d4c1",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550970,
+            "created": 1666702550970,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/{{ policy-uuid }}/{{ group-uuid }}",
+            "name": "Get policy bindings within a level and for given group",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "query-params",
+                    "disabled": true,
+                    "value": "[object Object]"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550970,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386ab3ea183",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550969,
+            "created": 1666702550969,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/{{ policy-uuid }}/{{ group-uuid }}",
+            "name": "Append policy bindings within a level for particular group",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"parameters\": {},\n  \"metadata\": {}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753867cba7981",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550969,
+            "created": 1666702550969,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/{{ policy-uuid }}/{{ group-uuid }}",
+            "name": "Delete a policy binding from a group within a level",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "query-params",
+                    "disabled": true,
+                    "value": "[object Object]"
+                },
+                {
+                    "name": "forceMultiple",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386159ecaec",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550969,
+            "created": 1666702550969,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings",
+            "name": "Get policy bindings for a level",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550969,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753869485989f",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550968,
+            "created": 1666702550968,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings",
+            "name": "Delete all policy bindings from a level",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550968,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753863cacc7bf",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550968,
+            "created": 1666702550968,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings",
+            "name": "Update policy bindings within a level",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"policyBindings\": [\n    {\n      \"policyUuid\": \"string\",\n      \"groups\": [\n        \"string\"\n      ],\n      \"parameters\": {},\n      \"metadata\": {}\n    }\n  ]\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550968,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753866152c7d9",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550967,
+            "created": 1666702550967,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/groups/{{ group-uuid }}",
+            "name": "Create or update policy bindings within a level for a group",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n  \"policyUuids\": [\n    \"string\"\n  ],\n  \"parameters\": {},\n  \"metadata\": {}\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550967,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538632d92611",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538642eb0565",
+            "modified": 1666702550967,
+            "created": 1666702550967,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/repo/{{ level-type }}/{{ level-id }}/bindings/groups/{{ group-uuid }}",
+            "name": "Get policy UUIDs for a given level by level ID and group",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550967,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386cd389817",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386a0ca3e04",
+            "modified": 1666702550971,
+            "created": 1666702550971,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/resolution/{{ level-type }}/{{ level-id }}/effectivepermissions",
+            "name": "Get effective permissions",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "services",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "entity_type",
+                    "disabled": false,
+                    "value": "string"
+                },
+                {
+                    "name": "entity_id",
+                    "disabled": false,
+                    "value": "string"
+                },
+                {
+                    "name": "explain",
+                    "disabled": true,
+                    "value": "true"
+                },
+                {
+                    "name": "page",
+                    "disabled": true,
+                    "value": "1"
+                },
+                {
+                    "name": "size",
+                    "disabled": true,
+                    "value": "100"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550971,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386a0ca3e04",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550995,
+            "created": 1666702550995,
+            "name": "IAM - effective permissions resolution resource",
+            "description": "Get effective permissions",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550995,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538679bc184f",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753868cf6d6dd",
+            "modified": 1666702550972,
+            "created": 1666702550972,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/configuration/policystatements",
+            "name": "Gets configuration for policy statements. Available values for services, permissions, conditions and operators",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "statuses",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1666702550972,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da29753868cf6d6dd",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550995,
+            "created": 1666702550995,
+            "name": "IAM - configuration resource",
+            "description": "Configuration available for validation",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550995,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386a3eb0c27",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "modified": 1666702550961,
+            "created": 1666702550961,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/objects/{{ objectId }}",
+            "name": "Gets the specified settings object",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550961,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550995,
+            "created": 1666702550995,
+            "name": "Settings - Objects",
+            "description": "Manage settings objects",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550995,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386ec7bff5b",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "modified": 1666702550960,
+            "created": 1666702550960,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/effectiveValues",
+            "name": "Lists effective settings values",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "schemaIds",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "scope",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "fields",
+                    "disabled": true,
+                    "value": "origin,value"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550960,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538627383ffc",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "modified": 1666702550960,
+            "created": 1666702550960,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/objects/{{ objectId }}",
+            "name": "Deletes the specified settings object",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "updateToken",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550960,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386156562f8",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "modified": 1666702550960,
+            "created": 1666702550960,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/objects/{{ objectId }}",
+            "name": "Updates an existing settings object",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550960,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386fe18f82d",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "modified": 1666702550959,
+            "created": 1666702550959,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/objects",
+            "name": "Lists persisted settings objects",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "schemaIds",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "scopes",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "fields",
+                    "disabled": true,
+                    "value": "objectId,value"
+                },
+                {
+                    "name": "nextPageKey",
+                    "disabled": true,
+                    "value": "string"
+                },
+                {
+                    "name": "pageSize",
+                    "disabled": true,
+                    "value": "0"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550959,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386b31c3265",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da297538666764b37",
+            "modified": 1666702550959,
+            "created": 1666702550959,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/objects",
+            "name": "Creates a new settings object",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [
+                {
+                    "name": "validateOnly",
+                    "disabled": true,
+                    "value": "true"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550959,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386d073f726",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386598cb70f",
+            "modified": 1666702550963,
+            "created": 1666702550963,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/organizational-levels/{{ level-type }}/{{ level-id }}",
+            "name": "Get an organizational level by level ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550963,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da2975386598cb70f",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550995,
+            "created": 1666702550995,
+            "name": "IAM - organizational levels",
+            "description": "Organizational levels available for policies repository and bindings",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550995,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753862310b051",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da2975386598cb70f",
+            "modified": 1666702550963,
+            "created": 1666702550963,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/iam/organizational-levels/{{ level-type }}/{{ level-id }}/descendants",
+            "name": "Get descendant organizational levels for a given level by level ID",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550963,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386ef4d732b",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753868b897f5c",
+            "modified": 1666702550958,
+            "created": 1666702550958,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/schemas",
+            "name": "Lists available settings schemas",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550958,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_wrk_7e16c3da778944d581ebdb9da29753868b897f5c",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550994,
+            "created": 1666702550994,
+            "name": "Settings - Schemas",
+            "description": "View settings schemas",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1666702550994,
+            "_type": "request_group"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386116bdadd",
+            "parentId": "fld_wrk_7e16c3da778944d581ebdb9da29753868b897f5c",
+            "modified": 1666702550958,
+            "created": 1666702550958,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/settings/schemas/{{ schemaId }}",
+            "name": "Gets parameters of the specified settings schema",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [
+                {
+                    "name": "schemaVersion",
+                    "disabled": true,
+                    "value": "string"
+                }
+            ],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550958,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538657a25c32",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550957,
+            "created": 1666702550957,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/locations",
+            "name": "Lists all cluster private synthetic locations",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386180ea958",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550957,
+            "created": 1666702550957,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/locations",
+            "name": "Creates a new private synthetic cluster location",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550957,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da297538699c1500d",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550955,
+            "created": 1666702550955,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/locations/{{ locationId }}",
+            "name": "Gets properties of the specified cluster location",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550955,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753868322b546",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550955,
+            "created": 1666702550955,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/locations/{{ locationId }}",
+            "name": "Updates the specified private synthetic cluster location",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json; charset=utf-8"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550955,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da2975386e7908772",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550954,
+            "created": 1666702550954,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/nodes/{{ nodeId }}",
+            "name": "Lists properties of the specified synthetic cluster node | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550954,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753860eca758d",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550954,
+            "created": 1666702550954,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/locations/{{ locationId }}",
+            "name": "Deletes the specified private synthetic cluster location",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550954,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_wrk_7e16c3da778944d581ebdb9da29753866c6a06c2",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702550953,
+            "created": 1666702550953,
+            "url": "{{ base_url }}/api/cluster/v2/api/cluster/v2/api/cluster/v2/synthetic/nodes",
+            "name": "Lists all synthetic cluster nodes | maturity=EARLY_ADOPTER",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "disabled": false,
+                    "value": "{{ authorization }}"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1666702550953,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_dd11e048b259f9e1500672022eebc740c8fe7e52",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702551002,
+            "created": 1666702551001,
+            "name": "Base environment",
+            "data": {
+                "base_url": "{{ scheme }}://{{ host }}"
+            },
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1666702551001,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_dd11e048b259f9e1500672022eebc740c8fe7e52",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702558321,
+            "created": 1666702558321,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_e3da5a6e16c64f76a7da961f4efe959b",
+            "parentId": "wrk_7e16c3da778944d581ebdb9da2975386",
+            "modified": 1666702552787,
+            "created": 1666702552779,
+            "fileName": "Dynatrace Cluster API 2.0",
+            "contents": "{\n  \"openapi\" : \"3.0.1\",\n  \"info\" : {\n    \"title\" : \"Dynatrace Cluster API\",\n    \"description\" : \"Dynatrace Managed exposes cluster-wide functionality via REST endpoints. This interactive documentation also acts as a REST client you can use to interact with Dynatrace Managed clusters. \\n\\nTo authorize, use the API Token generated in [Settings - API Tokens page](/cmc#cm/apiToken). The HTTP status code of the response shows the result of your request. The expected response code for a successful request is documented individually per REST endpoint. Additionally the following error response codes can occur in our REST interface:\\n\\n* 400 - Bad Request: Some request parameters are not correct. See response body for details.\\n* 401 - Unauthorized: A valid authorization header is required but is missing.\\n* 403 - Forbidden: Execution of request is not allowed, e.g. api-token is invalid.\\n* 404 - Not Found: Endpoint does not exist or some entities could not be found.\\n* 500 - Internal Server Error: See response body for details.\\n* 556 - Upgrade in progress: Operation couldn't be performed during the upgrade.\\n\\nNotes about compatibility:\\n* Operations marked as early adopter or preview may be changed in non-compatible ways, although we try to avoid this.\\n* We may add new enum constants without incrementing the API version; thus, clients need to handle unknown enum constants gracefully.\",\n    \"version\" : \"2.0\"\n  },\n  \"servers\" : [ {\n    \"url\" : \"\",\n        \"in\" : \"header\"\n      }\n    }\n  }\n}",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_env_dd11e048b259f9e1500672022eebc740c8fe7e52_sub",
+            "parentId": "env_dd11e048b259f9e1500672022eebc740c8fe7e52",
+            "modified": 1666702551001,
+            "created": 1666702551001,
+            "name": "Dynatrace Example Env",
+            "data": {
+                "scheme": "https",
+                "base_path": "",
+                "host": "*.live.dynatrace.com OR your-dtmanaged.com/e/ENVID",
+                "authorization": "Api-Token REPLACE_ME_WITH_TOKEN"
+            },
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1666702551001,
+            "_type": "environment"
+        }
+    ]
+}
